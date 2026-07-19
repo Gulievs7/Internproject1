@@ -1,17 +1,42 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '3.3.1'
+    id 'io.spring.dependency-management' version '1.1.5'
 }
 
-group = 'org.example'
-version = '1.0-SNAPSHOT'
+group = 'com.devjoint'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    // 1. Spring Web: REST API endpoint-ləri qurmaq üçün (Bax bura düzəldi!)
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // 2. Spring Data JPA: Verilənlər bazası ilə işləmək üçün
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // 3. Validation: Input yoxlamaları üçün
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // 4. MySQL Driver: MySQL bağlantısı üçün
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // 5. Lombok: Getter/Setter-ləri avtomatik idarə etmək üçün
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // Test alətləri
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 test {
