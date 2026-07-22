@@ -1,4 +1,3 @@
-// dto/author/AuthorResponseDto.java
 package org.example.dto.author;
 
 import lombok.AllArgsConstructor;

@@ -1,4 +1,3 @@
-// dto/member/MemberRequestDto.java
 package org.example.dto.member;
 
 import jakarta.validation.constraints.Email;

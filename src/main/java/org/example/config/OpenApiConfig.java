@@ -1,4 +1,4 @@
-// config/OpenApiConfig.java
+
 package org.example.config;
 
 import io.swagger.v3.oas.models.OpenAPI;

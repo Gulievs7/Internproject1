@@ -18,23 +18,22 @@ repositories {
 }
 
 dependencies {
-    // 1. Spring Web: REST API endpoint-ləri qurmaq üçün (Bax bura düzəldi!)
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    // 2. Spring Data JPA: Verilənlər bazası ilə işləmək üçün
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
-    // 3. Validation: Input yoxlamaları üçün
+
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
-    // 4. MySQL Driver: MySQL bağlantısı üçün
+
     runtimeOnly 'com.mysql:mysql-connector-j'
 
-    // 5. Lombok: Getter/Setter-ləri avtomatik idarə etmək üçün
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
-    // Test alətləri
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'

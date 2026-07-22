@@ -1,4 +1,3 @@
-// dto/book/BookResponseDto.java
 package org.example.dto.book;
 
 import lombok.AllArgsConstructor;

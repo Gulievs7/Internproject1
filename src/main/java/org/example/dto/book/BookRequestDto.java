@@ -1,4 +1,3 @@
-// dto/book/BookRequestDto.java
 package org.example.dto.book;
 
 import jakarta.validation.constraints.NotBlank;

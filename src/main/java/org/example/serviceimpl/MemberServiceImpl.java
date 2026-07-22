@@ -1,6 +1,4 @@
-// serviceimpl/MemberServiceImpl.java
-package org.example.serviceimpl;
-
+package  org.example.serviceimpl;
 import lombok.RequiredArgsConstructor;
 import org.example.dto.member.MemberRequestDto;
 import org.example.dto.member.MemberResponseDto;

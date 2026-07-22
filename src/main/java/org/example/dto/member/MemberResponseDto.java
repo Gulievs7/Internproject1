@@ -1,4 +1,3 @@
-// dto/member/MemberResponseDto.java
 package org.example.dto.member;
 
 import lombok.AllArgsConstructor;
